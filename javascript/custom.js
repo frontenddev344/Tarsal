@@ -62,3 +62,6 @@ function tooltip (btn, tool) {
  }
  
  tooltip('boton', 'tooltip');
+
+
+

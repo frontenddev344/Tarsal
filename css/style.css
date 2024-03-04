@@ -216,21 +216,16 @@ div#login span a {
 
 /* welcome styling start form */
 
-/* home-dashboard-chat-collapsed  page css */
-.home-dashboard-chat-collapsed {
-    width: 100%;
-    max-width: 100%;
-    display: flex;
-}
 
 .home-dashboard-chat-collapsed .sidebar {
     background-color: #0E0C36;
     padding: 20px;
-    width: 100%;
-    max-width: 279px;
-    min-height: 100vh;
+    width: 300px;
+    height: 100vh;
+    position: fixed;
+    z-index: 1;
+    overflow-y: auto;
 }
-
 .navigation {
     padding-top: 30px;
 }
@@ -247,7 +242,7 @@ div#login span a {
     font-weight: 600;
     position: relative;
     background-color: transparent;
-    padding: 16px;
+    padding: 14px;
     display: block;
     border-radius: 8px;
 }
@@ -288,10 +283,12 @@ div#login span a {
 .header-row {
     display: flex;
     align-items: center;
-    width: 100%;
-    justify-content: space-between;
+    width: calc(100% - 300px );
+    left: 300px;
+    position: fixed;
+    background: red;
+    top: 0;
 }
-
 .right-side {
     display: flex;
     align-items: center;
@@ -597,6 +594,7 @@ h4.learn2 {
 /*  */
 .site-bnr {
     padding-top: 20px;
+    position: relative;
 }
 
 .learning-div {
@@ -869,4 +867,147 @@ div#emailHelp span {
 .content_box p a {
     color: #0B092A;
     font-weight: 600;
+}
+
+.my_progress_bottom .new-post img {
+    width: 15px;
+}
+.my_progress_bottom .new-post {
+    background: #D60000;
+}
+.my_progress_bottom .more-videos
+{
+    font-size: 16px;
+}
+
+.total_points_bottom_section .total_points .point_chart {
+    border: 10px solid #0E0C36;
+    display: flex;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.total_points_bottom_section .total_points .point_chart img {
+    width: 20px;
+    margin-bottom: 10px;
+}
+.total_points_bottom_section .total_points .point_chart p {
+    font-size: 17px;
+    color: #0e0c36;
+    font-weight: 700;
+}
+.total_points_bottom_section .total_points .point_chart p span {
+    color: #bcbcbc;
+    font-weight: 500;
+    font-size: 15px;
+}
+.total_points {
+    display: inline-block;
+    text-align: center;
+}
+.total_points .points_para {
+    text-transform: capitalize;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.bas_sec .common_bas_cls .common_bac_img {
+    width: 20px;
+}
+.common_bas_cls {
+    clip-path: polygon(100% 0, 100% 60%, 50% 100%, 0 60%, 0 0);
+    width: 100px;
+    border-radius: 10px;
+    text-align: center;
+    height: auto;
+    padding: 10px 0;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.biology {
+    background: #D9BA0A;
+}
+.bas_sec .stars_bas img {
+    width: 12px;
+    height: 10px;
+}
+.common_bas_cls .stars_bas {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.common_bas_cls p {
+    color: #fff;
+}
+.anatomy {
+    background: #9F9F9F;
+}
+.surgery {
+    background: #AD8A56;
+}
+.bas_sec {
+    display: flex;
+    justify-content: space-between;
+}
+
+.game_masterd .new-post {
+    display: flex;
+    justify-content: start;
+    padding: 8px 20px;
+    margin-bottom: 5px;
+}
+.game_masterd .new-post img {
+    margin-right: 10px;
+}
+.game_masterd .new-post.bio {
+    background: #d9ba0a;
+}
+.game_masterd .new-post.anato {
+    background: #9F9F9F;
+}
+.game_masterd .new-post.surg {
+    background: #AD8A56;
+}
+.game_masterd h4 {
+    font-size: 18px;
+    color: #0E0C36;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+}
+.game_masterd h4 span {
+    background: #0e0c36;
+    color: #fff;
+    border-radius: 50%;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25px;
+    width: 25px;
+    font-size: 12px;
+}
+.my_progress_bottom {
+    padding: 20px;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.16);
+    border-radius: 12px;
+    border-style: solid;
+    border-color: #e6e6e6;
+}
+.home-dashboard {
+    width: calc(100% - 300px );
+    position: absolute;
+    left: 300px;
+}
+.toggle_cls img {
+    width: 50px;
+}
+.toggle_cls {
+    top: 420px;
+    position: fixed;
+    left: 275px;
+    z-index: 1;
+    cursor: pointer;
 }
