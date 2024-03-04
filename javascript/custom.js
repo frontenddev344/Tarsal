@@ -18,52 +18,70 @@ $(function () {
 
 
 
-function tooltip (btn, tool) {
-    var btn = document.getElementById(btn);  // El botón.
-    var tool = document.getElementById(tool);  // El tooltip.
+
+
+
+ function tooltip(btnClass, toolClass) {
+    var btns = document.getElementsByClassName(btnClass);  // Buttons with the specified class.
+    var tools = document.getElementsByClassName(toolClass);  // Tooltips with the specified class.
     var open = false;
- 
-    // Evito que se cierre el tooltip si hago click sobre el tooltip.
-     tool.addEventListener('click', function(event){
-          event.stopPropagation();
-     });
- 
-    // Al hacer click en el botón.
-    btn.addEventListener('click', function(event){
-       event.stopPropagation();
-       // Si estaba Cerrado.
-       if(!open){
-          tool.classList.add('abierto');
-          open = true;
-          // Cuando hago click en cualquier parte de la página.
-          document.addEventListener('click', ocultar);
-  
-       // Si estaba abierto.
-       }else{
-          // Oculto el tooltip.
-          tool.classList.remove('abierto');
-          open = false;
-          // Quito el evento que hace que al hacer click en cualquier parte del document se cierre el tooltip.
-          document.removeEventListener('click', ocultar);
-       }
+
+    // Prevent tooltip from closing if clicked directly.
+    Array.from(tools).forEach(function(tool) {
+        tool.addEventListener('click', function(event){
+            event.stopPropagation();
+        });
     });
- 
-    // Función para ocultar el tooltip si hago click en cualquier parte del document.
-    function ocultar () {
-       // Oculto el tooltip.
-       tool.classList.remove('abierto');
-       open = false;
-       // Quito el evento para que no gaste tantos recursos del computador.
-       document.removeEventListener('click', ocultar);
-       
-       console.log('Click en cualquier parte y oculto el Tooltip');
+
+    // Add click event listener to each button with the specified class.
+    Array.from(btns).forEach(function(btn) {
+        btn.addEventListener('click', function(event){
+            event.stopPropagation();
+            
+            // If the tooltip was closed.
+            if(!open){
+                Array.from(tools).forEach(function(tool) {
+                    tool.classList.add('abierto');
+                });
+                open = true;
+
+                // Click anywhere on the page to hide the tooltip.
+                document.addEventListener('click', ocultar);
+
+            // If the tooltip was open.
+            } else {
+                // Hide the tooltip.
+                Array.from(tools).forEach(function(tool) {
+                    tool.classList.remove('abierto');
+                });
+                open = false;
+                
+                // Remove the event listener to close the tooltip when clicking anywhere on the document.
+                document.removeEventListener('click', ocultar);
+            }
+        });
+    });
+
+    // Function to hide the tooltip when clicking anywhere on the document.
+    function ocultar() {
+        // Hide the tooltip.
+        Array.from(tools).forEach(function(tool) {
+            tool.classList.remove('abierto');
+        });
+        open = false;
+        
+        // Remove the event listener to conserve resources.
+        document.removeEventListener('click', ocultar);
+        
+        console.log('Click anywhere and hide the tooltip');
     }
- 
- }
- 
- tooltip('boton', 'tooltip');
+}
+
+// Call the function with the button class and tooltip class.
+tooltip('boton', 'tooltip');
 
 
+ 
 
  $(document).ready(function() {
     $('.toggle_cls').click(function() {
