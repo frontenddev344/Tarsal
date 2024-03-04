@@ -1000,6 +1000,7 @@ div#emailHelp span {
     width: calc(100% - 300px );
     position: absolute;
     left: 300px;
+    
 }
 .toggle_cls img {
     width: 50px;
@@ -1010,4 +1011,40 @@ div#emailHelp span {
     left: 275px;
     z-index: 1;
     cursor: pointer;
+}
+
+.sidebar.active {
+    width: 100px;
+}
+.home-dashboard.active .toggle_cls {
+    position: fixed;
+    left: 75px;
+    transform: rotate(180deg);
+}
+.home-dashboard.active  {
+    width: calc(100% - 100px );
+    left: 100px;
+}
+.home-dashboard.active .header-row  {
+    width: calc(100% - 100px );
+    left: 100px;
+}
+
+.sidebar.active .navigation nav.side-menu ul li a {
+    font-size: 0px;
+}
+.active_logo_an .active_logo {
+    width: 60px;
+}
+.active_logo_an  {
+    display: none;
+}
+.sidebar.active .active_logo_an {
+    display: block;
+}
+.sidebar.active .wactive_logo_an {
+    display: none;
+}
+.sidebar.active .navigation{
+   padding-top: 0;
 }

@@ -32,7 +32,18 @@ button.btn {
   
     
   }
-  
+  @media screen and (max-width:767px)
+  {
+    .home-dashboard {
+      width: 100%;
+      left: 0;
+  }
+  .header-row {
+    width: 100%;
+    left: 0;
+}
+  }
+ 
   @media (max-width:575px) {
     .container {
       padding: 1.5rem;

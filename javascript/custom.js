@@ -65,3 +65,12 @@ function tooltip (btn, tool) {
 
 
 
+ $(document).ready(function() {
+    $('.toggle_cls').click(function() {
+        // Toggle 'active' class on the sidebar
+        $('.sidebar').toggleClass('active');
+
+        // Toggle 'home-dashboard' class on the content
+        $('.home-dashboard').toggleClass('active');
+    });
+});
