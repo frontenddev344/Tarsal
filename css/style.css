@@ -1350,25 +1350,100 @@ responsive header */
     justify-content: end;
 }
 .all_contact_top_chat_inner span {
-    margin-left: 20px;
+    margin-left: 0px;
     border-radius: 50%;
     padding: 5px;
     transition: all 0.3s;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
 }
-.all_contact_top_chat_inner span:first-child:hover {
+.all_contact_top_chat_inner span label {
+visibility:hidden;
+}
+.all_contact_top_chat_inner span:hover  label{
+    visibility:visible;
+}
+.all_contact_top_chat_inner span:first-child .image_parent_contact:hover {
     background: #0e0c361c;
 }
-.all_contact_top_chat_inner span:nth-child(2):hover {
+.all_contact_top_chat_inner span:nth-child(2) .image_parent_contact:hover {
     background: #d8002724;
 }
-.all_contact_top_chat_inner span:nth-child(3):hover {
+.all_contact_top_chat_inner span:nth-child(3) .image_parent_contact:hover {
     background: unset;
 }
-.all_contact_top_chat_inner span:nth-child(4):hover {
+.all_contact_top_chat_inner span:nth-child(4) .image_parent_contact:hover {
     background: #4d4d4d26;
 }
-.all_contact_top_chat_inner span:nth-child(5):hover {
+.all_contact_top_chat_inner span:nth-child(5) .image_parent_contact:hover {
     background: #4d4d4d26;
 }
+.all_contact_top_chat_inner span:first-child label {
+ 
+    background: #0e0c361c;
+    text-transform: capitalize;
+    padding:3px 5px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.all_contact_top_chat_inner span:nth-child(2) label {
+    background: #d8002724;
+    text-transform: capitalize;
+    padding:3px 5px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.all_contact_top_chat_inner span:nth-child(3) label{
+    background: unset;
+    text-transform: capitalize;
+    padding:3px 5px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    opacity: 0;
+}
+.all_contact_top_chat_inner span:nth-child(4) label  {
+    background: #4d4d4d26;
+    text-transform: capitalize;
+    padding:3px 5px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.all_contact_top_chat_inner span:nth-child(5) label {
+    background: #4d4d4d26;
+    text-transform: capitalize;
+    padding:3px 5px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    
+}
   
-  
+.left_side_all_contact .contact_search_box input {
+    border: unset;
+
+}
+.left_side_all_contact {
+    border-radius: 15px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.left_side_all_contact .contact_search_box input::placeholder {
+    color: #cccccc;
+}
+.left_side_all_contact .contact_search_box{
+    position: relative;
+}
+
+.left_side_all_contact .contact_search_box img {
+    position: absolute;
+    width: 20px;
+    right: 20px;
+    top: 30%;
+    filter: contrast(0.1);
+    filter: brightnss();
+}
+
+.image_parent_contact {
+    border-radius: 50%;
+    padding: 10px;
+}
