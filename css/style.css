@@ -1221,9 +1221,117 @@ responsive header */
     border-radius: 25px;
     margin-left: 0;
 }
-.top_upgrade_button .main_span_upgrade {
+.top_upgrade_buttons .main_span_upgrade {
     display: inline-block;
     background: #E6E6E6;
     padding: 10px 4px;
     border-radius: 30px;
+}
+
+.upgrade_plan_ul li a img {
+
+    width: 20px;
+    margin-right:8px;
+}
+.upgrade_card.free_plan .upgrade_plan_ul li a img
+{
+    filter: brightness(0.5);
+}
+.upgrade_card.free_plan {
+    background: #E8E8EC;
+}
+.upgrade_card .upgrade_plan_img img {
+    width: 100%;
+    max-width: 40px;
+
+}
+.upgrade_plan_img p {
+    color: #666666;
+    font-size: 20px;
+    padding-top: 15px;
+}
+.upgrade_card .upgrade_plan_h2 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #666666;
+    margin: 25px 0;
+}
+.upgrade_card .upgrade_plan_ul li a {
+    font-size: 18px;
+    font-weight: 500;
+    color: #0e0c36;
+}
+.upgrade_plan_buy_now_button a {
+    border: 1px solid #000;
+    font-size: 18px;
+    font-weight: 600;
+}
+.upgrade_plan_buy_now_button {
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+.upgrade_plan_buy_now_button a {
+    width: 100%;
+    max-width: 265px;
+    border: 1px solid #000;
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+    height: 40px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+    border-radius: 5px;
+}
+.upgrade_card .upgrade_plan_ul li {
+    margin-bottom: 12px;
+}
+.upgrade_card {
+    padding: 30px 20px;
+    border-radius: 15px;
+}
+.upgrade_card.free_plan .upgrade_plan_buy_now_button a {
+    border: 1px solid #24D27E;
+    color: #24d27e;
+}
+
+.upgrade_card.standard_plan {
+    background: #0e0c36;
+}
+
+.upgrade_card.standard_plan .upgrade_plan_ul li a{
+    color: #fff;
+}
+
+.upgrade_card.standard_plan .upgrade_plan_h2{
+    color: #fff;
+}
+.upgrade_card.standard_plan .upgrade_plan_img p{
+    color: #fff; 
+}
+
+.upgrade_card.standard_plan .upgrade_plan_buy_now_button a {
+    border: 1px solid #87CEEB;
+    background: #87CEEB;
+    color: #000;
+}
+.upgrade_card.Premium_plan {
+    background: #24d27e;
+}
+
+.upgrade_card.Premium_plan .upgrade_plan_img p {
+    color: #0e0c36;
+}
+.upgrade_card.Premium_plan .upgrade_plan_h2 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #0e0c36;
+    margin: 25px 0;
+}
+.upgrade_card.Premium_plan .upgrade_plan_buy_now_button a {
+    border: 1px solid #0e0c36;
+    background: #0e0c36;
+    color: #fff;
 }

@@ -168,7 +168,10 @@ ul.bottom_ul_flags li a img {
 .content_box p a {
   word-wrap: break-word;
 }
-
+.top_upgrade_buttons .main_span_upgrade span {
+  font-size: 13px;
+  margin: 0px 10px;
+}
 
   }
   
