@@ -26,7 +26,10 @@ nav.mainnav {
   margin-left: 40px;
   margin-right: 10px;
 }
-
+div#side_responsive {
+  display: flex;
+  justify-content: end;
+}
 }
 @media (max-width:1399px)  {
   .home-dashboard {
@@ -86,7 +89,11 @@ ul.bottom_ul_flags li a {
 ul.bottom_ul_flags li a img {
   margin-right: 10px;
 }
-
+.toggle_side_nav_mob {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
 
 
 
@@ -155,6 +162,14 @@ ul.bottom_ul_flags li a img {
   max-width: 35px;
   height: 35px;
 }
+.head-row-wrapper {
+  display: block;
+}
+.content_box p a {
+  word-wrap: break-word;
+}
+
+
   }
   
 
