@@ -1,4 +1,43 @@
+@media (max-width:1599px)  {
+  .header-wrapper h3.hello-aadi {
+    font-size: 20px;
+    text-wrap: nowrap;
+}
+.search-box-inner input {
+  width: 240px;
+  font-size: 16px;
+}
+.search-box-wrapper {
+  margin-left: 15px;
+}
+.premium {
+  margin-left: 20px;
+}
+nav.mainnav {
+  margin-left: 20px;
+}
+.solar-car {
+  margin-left: 10px;
+}
+.solar-car img {
+  margin: 0 0 0 15px;
+}
+.user-profile {
+  margin-left: 40px;
+  margin-right: 10px;
+}
 
+}
+@media (max-width:1399px)  {
+  .home-dashboard {
+    width: 100%;
+    left: 0;
+  }
+  .header-row {
+  width: 100%;
+  left: 0;
+  }
+}
 @media (max-width:1199px)  
 {
   .form-group {
@@ -7,6 +46,51 @@
 button.btn {
   width: 70%;
 }
+.search-wrapper {
+  display: block;
+}
+.right-side {
+  display: block;
+}
+.header-wrapper h3.hello-aadi {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.search-box-inner input {
+  width: 225px;
+  font-size: 15px;
+}
+#side_responsive .sidenav a {
+  font-size: 16px;
+  color: #fff;
+}
+
+.premium {
+  margin: 30px 15px;
+}
+.solar-car {
+  text-align: center;
+  margin-left: 0;
+  margin-top: 30px;
+}
+.mainnav ul ul {
+  min-width: 215px;
+}
+.hasDD > a:after {
+  right: -20px;
+}
+ul.bottom_ul_flags li a {
+  color: #ccc!important;
+}
+ul.bottom_ul_flags li a img {
+  margin-right: 10px;
+}
+
+
+
+
+
 }
 @media (max-width: 850px) {
     .form {
@@ -34,14 +118,7 @@ button.btn {
   }
   @media screen and (max-width:767px)
   {
-    .home-dashboard {
-      width: 100%;
-      left: 0;
-  }
-  .header-row {
-    width: 100%;
-    left: 0;
-}
+   
   }
  
   @media (max-width:575px) {

@@ -21,6 +21,12 @@ $(function () {
 
 
 
+
+
+
+
+
+
  function tooltip(btnClass, toolClass) {
     var btns = document.getElementsByClassName(btnClass);  // Buttons with the specified class.
     var tools = document.getElementsByClassName(toolClass);  // Tooltips with the specified class.
@@ -83,6 +89,13 @@ tooltip('boton', 'tooltip');
 
  
 
+
+
+
+
+
+
+
  $(document).ready(function() {
     $('.toggle_cls').click(function() {
         // Toggle 'active' class on the sidebar
@@ -92,3 +105,50 @@ tooltip('boton', 'tooltip');
         $('.home-dashboard').toggleClass('active');
     });
 });
+
+
+
+
+
+
+
+
+
+
+
+
+$(".mainnav div").click(function() {
+    $("ul").slideToggle();
+    $("ul ul").css("display", "none");
+    $(".mainnav .on").toggleClass("on");
+  });
+  $(".hasDD").click(function(e) {
+    $(this)
+      .find("> ul")
+      .slideToggle();
+    $(this)
+      .find("> ul ul")
+      .css("display", "none");
+    $(this)
+      .find("> ul li")
+      .removeClass("on");
+    $(this).toggleClass("on");
+    e.stopPropagation();
+  });
+  
+
+
+
+
+
+
+
+
+
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }

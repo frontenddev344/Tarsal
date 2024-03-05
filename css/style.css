@@ -223,7 +223,7 @@ div#login span a {
     width: 300px;
     height: 100vh;
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     overflow-y: auto;
 }
 .navigation {
@@ -291,6 +291,7 @@ div#login span a {
     z-index: 1;
     padding: 20px;
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.16);
+    justify-content: space-between;
 }
 .right-side {
     display: flex;
@@ -596,7 +597,7 @@ h4.learn2 {
 
 /*  */
 .site-bnr {
-    padding-top: 20px;
+    padding-top: 70px;
     position: relative;
 }
 
@@ -887,8 +888,8 @@ div#emailHelp span {
     border: 10px solid #0E0C36;
     display: flex;
     border-radius: 50%;
-    height: 150px;
-    width: 150px;
+    height: 130px;
+    width: 130px;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -922,11 +923,11 @@ div#emailHelp span {
 }
 .common_bas_cls {
     clip-path: polygon(100% 0, 100% 60%, 50% 100%, 0 60%, 0 0);
-    width: 100px;
+    width: auto;
     border-radius: 10px;
     text-align: center;
     height: auto;
-    padding: 10px 0;
+    padding: 10px 8px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .biology {
@@ -1012,7 +1013,7 @@ div#emailHelp span {
     top: 420px;
     position: fixed;
     left: 275px;
-    z-index: 1;
+    z-index: 3;
     cursor: pointer;
 }
 
@@ -1031,6 +1032,7 @@ div#emailHelp span {
 .home-dashboard.active .header-row  {
     width: calc(100% - 100px );
     left: 100px;
+
 }
 
 .sidebar.active .navigation nav.side-menu ul li a {
@@ -1051,3 +1053,147 @@ div#emailHelp span {
 .sidebar.active .navigation{
    padding-top: 0;
 }
+
+
+
+.mainnav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    background: #fafaff;
+    position: relative;
+    border-radius: 20px;
+  }
+  .mainnav li {
+    display: inline-block;
+    position: relative;
+  }
+  .mainnav a {
+    color: #292929;
+    text-decoration: none;
+    padding: 15px 30px 15px 15px;
+    display: block;
+    position: relative;
+  }
+
+  .mainnav ul ul {
+    position: absolute;
+    top: 100%;
+    min-width:auto;
+    display: none;
+  }
+  .mainnav ul ul ul {
+    left: 100%;
+    top: 0;
+  }
+  .mainnav ul ul li {
+    display: block;
+  }
+ 
+  /* lets not confuse click with hover for now
+  .mainnav ul li:hover ul {
+      display: block;
+  }
+  */
+  .mainnav li i {
+    color: #292929;
+    float: right;
+    padding-left: 20px;
+  }
+  .mainnav div {
+    color: #292929;
+    font-size: 24px;
+    padding: 0.6em;
+    cursor: pointer;
+    display: none;
+  }
+  .hasDD > a:after {
+    content: "";
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    margin-top: -3px;
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid #000;
+    transition: all 0.5s linear;
+  }
+  .mainnav li:hover > a:after {
+    border-top-color: #b3b3b3;
+  }
+  .hasDD.on > a:after {
+    transform: rotate(180deg);
+  }
+  ul ul .hasDD.on > a:after {
+    transform: rotate(-90deg);
+  }
+  
+  @media (min-width: 768px) {
+    /* over-ride js inline style*/
+    .mainnav > ul {
+      display: block !important;
+    }
+  }
+  
+
+
+  nav.mainnav img {
+    width: 30px;
+}
+
+ul.bottom_ul_flags li a {
+    /* justify-content: space-around; */
+    display: flex;
+    color: #b3b3b3;
+    font-weight: 700;
+}
+ul.bottom_ul_flags li a img {
+    margin-right: 2px;
+}
+
+
+
+/* 
+responsive header */
+
+
+#side_responsive .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #0e0c36;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  #side_responsive .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  #side_responsive .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  #side_responsive .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    #side_responsive .sidenav {padding-top: 15px;}
+    #side_responsive .sidenav a {font-size: 18px;}
+  }
