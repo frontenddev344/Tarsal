@@ -1447,3 +1447,21 @@ visibility:hidden;
     border-radius: 50%;
     padding: 10px;
 }
+.left_side_all_contact h6 {
+    color: #666666;
+    text-transform: capitalize;
+}
+.image_chat_div img {
+    width: 45px;
+}
+.content_chat_div img {
+    width: 30px;
+}
+.chat_list_contacts {
+    display: flex;
+    justify-content: space-between;
+}
+.left_side_chat {
+    display: flex;
+    align-items: center;
+}
