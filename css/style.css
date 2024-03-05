@@ -1197,3 +1197,33 @@ responsive header */
     #side_responsive .sidenav {padding-top: 15px;}
     #side_responsive .sidenav a {font-size: 18px;}
   }
+
+
+
+
+/*********************************************************** upgrade-premium page css start ********************************************************/
+
+
+  .top_upgrade_buttons {
+    padding: 40px 0;
+    text-align: center;
+}
+.top_upgrade_buttons .main_span_upgrade span {
+    color: #999999;
+    font-size: 16px;
+    margin: 0px 12px;
+}
+
+.top_upgrade_buttons .main_span_upgrade span.blue_upgrade {
+    color: #fff!important;
+    background: #0e0c36;
+    padding: 8px 16px;
+    border-radius: 25px;
+    margin-left: 0;
+}
+.top_upgrade_button .main_span_upgrade {
+    display: inline-block;
+    background: #E6E6E6;
+    padding: 10px 4px;
+    border-radius: 30px;
+}
