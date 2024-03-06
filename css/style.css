@@ -1707,3 +1707,29 @@ visibility:hidden;
     font-size: 14px;
     color: #666666;
 }
+.faq_footer {
+    background: #ffff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.faq_footer .form-control {
+    border: unset;
+    background: #fafaff;
+    border-radius: 10px;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.16);
+}
+.faq_footer label {
+    font-size: 16px;
+    color: #666666;
+    margin-bottom: 10px;
+}
+.common_footer_faq_contact {
+    margin-bottom: 25px;
+}
+.faq_footer a {
+    background: #0e0c36;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
