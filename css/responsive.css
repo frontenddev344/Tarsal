@@ -94,8 +94,13 @@ ul.bottom_ul_flags li a img {
   top: 0;
   z-index: 1;
 }
-
-
+.real_chat_footer {
+  position: unset;
+  width: 100%;
+}
+.real_chat_footer input {
+  margin-right: 0px;
+}
 
 
 }
@@ -172,11 +177,46 @@ ul.bottom_ul_flags li a img {
   font-size: 13px;
   margin: 0px 10px;
 }
+.site-bnr {
+  margin: 10px 5px;
+}
+h4.learn2 {
+  font-size: 20px;
+  text-align: center;
+}
+
+.all_contact_top_head .all_contact_top_chat_inner{
+  display: block;
+}
+.real_chat_footer {
+  display: block;
+}
+.real_chat_footer input {
+  margin-bottom: 15px;
+}
+.left_side_all_contact {
+  padding: 20px 10px;
+}
 
   }
   
 
-
+  @media (max-width:400px){
+    .chat_list_contacts {
+      display: flex;
+      flex-direction: column;
+  }
+  .left_side_chat {
+    justify-content: center;
+   
+}
+.right_side_chat{
+  margin-top: 20px;
+}
+.all_contact_top_chat_inner {
+  justify-content: space-around;;
+}
+  }
 
 
 
