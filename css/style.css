@@ -1005,6 +1005,7 @@ div#emailHelp span {
     width: calc(100% - 300px );
     position: absolute;
     left: 300px;
+    background: #f5f5f5;
     
 }
 .toggle_cls img {
@@ -1637,4 +1638,72 @@ visibility:hidden;
 }
 .all_contant_same_div_main {
     height: 100%;
+}
+
+
+/*********************************************************** faq left bar css start ********************************************************/
+
+.faq_header2 .contact_search_box {
+    position: relative;
+    border-bottom: unset;
+}
+.faq_header2 .contact_search_box img {
+    position: absolute;
+    width: 25px;
+    right: 25px;
+    top: 30%;
+}
+.faq_header2 .contact_search_box input {
+    border: unset;
+    outline: unset;
+    background: #fff;
+    border-radius: 5px;
+    height: 50px;
+}
+
+.faq_header3 a {
+    background: #0e0c36;
+    font-size: 14px;
+    text-transform: capitalize;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.faq_header3 a img {
+    width: 20px;
+    margin-left: 10px;
+}
+.faq_header3 {
+    text-align: end;
+}
+
+.accordion-item {
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    background-color: #fff;
+    border: unset;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.accordion-button:not(.collapsed) {
+    color: unset;
+    background-color: unset;
+    box-shadow: unset;
+}
+.accordion-button:focus {
+    border-color: unset;
+    box-shadow:unset
+}
+
+.accordion-button {
+    font-size: 16px;
+    color: #4d4d4d;
+    font-weight: 500;
+}
+.accordion-body {
+    font-size: 14px;
+    color: #666666;
 }
