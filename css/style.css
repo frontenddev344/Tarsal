@@ -43,10 +43,8 @@ img {
 }
 
 
-/* password recovery styling start */
 .password_recovery {
     height: 100vh;
-    /* overflow-y: hidden; */
 }
 
 .password_inner {
@@ -80,8 +78,7 @@ img {
     padding: 0;
 }
 
-/* password recovery styling end */
-/* form styling start */
+
 .form_inner {
     display: flex;
     align-items: center;
