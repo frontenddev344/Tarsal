@@ -1889,3 +1889,83 @@ p.second_user_chat_bot {
     margin-left: 30px;
     text-align: end;
 }
+.description_body {
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    height: 100%;
+}
+.description_body p {
+    margin-bottom: 20px;
+}
+.loaction_a a img {
+    width: 20px;
+}
+.common_owner_form_div.button_bottom_form_owner img {
+    width: 25px;
+}
+.profile_select_from_owner_account h6 {
+    color: #999999;
+    font-weight: 550;
+}
+.profile_select_from_owner_account label {
+    color: #999999;
+    font-weight: 550;
+    margin-bottom: 5px;
+}
+.common_owner_form_div input {
+    border: unset;
+    outline: unset;
+    padding: 12px;
+}
+.common_owner_form_div select {
+    appearance: auto;
+    border: unset;
+    outline: unset;
+    padding: 10px;
+}
+.common_owner_form_div .loaction_a {
+    padding: 10px;
+    background: #fff;
+    border-radius: 5px;
+    color: #4d4d4d;
+}
+.common_owner_form_div .loaction_a a {
+    color: #4d4d4d;
+}
+.common_owner_form_div .loaction_a a img {
+    margin-right: 5px;
+    filter: contrast(0.5);
+}
+.common_owner_form_div {
+    margin-bottom: 20px;
+    position: relative;
+}
+.common_owner_form_div.button_bottom_form_owner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.common_owner_form_div.button_bottom_form_owner a {
+    background: #0e0c36;
+    padding: 6px 12px;
+    color: #fff;
+    border-radius: 5px;
+}
+.common_owner_form_div.button_bottom_form_owner a img {
+    margin-right: 5px;
+}
+.common_owner_form_div.button_bottom_form_owner span img {
+    margin-right: 10px;
+
+}
+    .common_owner_form_div.button_bottom_form_owner span {
+    color: #4d4d4d;
+    font-weight: 500;
+}
+.common_owner_form_div .edit_in_input_img {
+    width: 25px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+}
