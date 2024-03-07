@@ -102,13 +102,36 @@ ul.bottom_ul_flags li a img {
   margin-right: 0px;
 }
 
+.selected_profile_text .profile_selcted_col1 img {
+  width: 60px;
+}
+
+.profile_selcted_col3 p {
+  font-size: 26px;
+}
+.profile_selected_header_area .common_bas_cls {
+  padding: 10px 15px;
+}
+.profile_selcted_col2 p:first-child {
+  font-size: 22px;
+}
+
+
 
 }
 @media (max-width:991px){
   .chat_bot_body_area {
     position: unset;
 }
-
+.selected_profile_text {
+  justify-content: center;
+}
+.profile_selected_header_area .bas_sec {
+  justify-content: center;
+}
+.profile_selected_header_area .bas_sec .common_bas_cls {
+  margin: 20px 10px;
+}
 }
 @media (max-width: 850px) {
     .form {
@@ -203,6 +226,23 @@ h4.learn2 {
 .left_side_all_contact {
   padding: 20px 10px;
 }
+.selected_profile_text {
+  display: block;
+  text-align: center;
+}
+.profile_selected_header_area .bas_sec {
+  display: block;
+  width: fit-content;
+  height: auto;
+  text-align: center;
+}
+
+
+
+
+
+
+
 
   }
   

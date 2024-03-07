@@ -1787,6 +1787,13 @@ p.second_user_chat_bot {
 .footer_area_chat_bot {
     border-top: 1px solid #f2f2f2;
 }
+
+
+/*********************************************************** profile select from other client css start ********************************************************/
+
+
+
+
 .selected_profile_text .profile_selcted_col1 img {
     width: 90px;
 }
@@ -1843,4 +1850,42 @@ p.second_user_chat_bot {
 }
 .profile_selected_body_area h4 {
     margin-bottom: 20px;
+}
+
+
+
+
+
+/*********************************************************** profile select from own account css start ********************************************************/
+
+
+.premium.preminum_yellow .upgrade-premium img {
+    width: 25px;
+    margin-right: 5px;
+}
+.premium.preminum_yellow {
+    padding: 8px 35px;
+    background: #EBE200;
+}
+.premium.preminum_yellow a{
+    color:#0e0c36 ;
+}
+
+.left_side_own_header {
+    display: flex;
+    align-items: center;
+}
+
+.right_side_own_header {
+    display: flex;
+    justify-content: end;
+}
+
+.left_side_own_header .profile_selcted_col1 img {
+    margin-right: 50px;
+}
+
+.right_side_own_header .faq_header3 {
+    margin-left: 30px;
+    text-align: end;
 }
