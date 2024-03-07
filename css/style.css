@@ -1787,3 +1787,60 @@ p.second_user_chat_bot {
 .footer_area_chat_bot {
     border-top: 1px solid #f2f2f2;
 }
+.selected_profile_text .profile_selcted_col1 img {
+    width: 90px;
+}
+.selected_profile_text {
+    display: flex;
+    align-items: center;
+}
+
+.selected_profile_text .profile_selcted_col2 p img {
+    width: 20px;
+}
+.profile_selcted_col2 p:first-child {
+    font-size: 24px;
+    color: #4d4d4d;
+    font-weight: 650;
+}
+.profile_selcted_col2 p:last-child {
+    color: #999999;
+    font-size: 14px;
+    font-weight: 500;
+}
+.profile_selcted_col2 p:last-child img{
+    margin-right: 5px;
+}
+.profile_selcted_col3 p {
+    font-size: 32px;
+    color: #000;
+    font-weight: 650;
+}
+.profile_selcted_col3 p span {
+    font-weight: 500;
+    color: #999999;
+    font-size: 16px;
+    margin-left: 5px;
+}
+.profile_selcted_col2 {
+    margin: 0px 25px;
+}
+.profile_selected_header_area .bas_sec {
+    justify-content: space-evenly;
+}
+.profile_selected_header_area .common_bas_cls {
+    padding: 10px 25px;
+}
+.profile_selected_body_area {
+    padding: 20px;
+    border-radius: 10px;
+    background: #fff;
+    margin-top: 30px;
+}
+.profile_selected_body_area p {
+    margin-bottom: 20px;
+    color: #4d4d4d;
+}
+.profile_selected_body_area h4 {
+    margin-bottom: 20px;
+}
