@@ -1730,3 +1730,60 @@ visibility:hidden;
     padding: 10px;
     border-radius: 5px;
 }
+
+
+
+/*********************************************************** faq chat bot opened css start ********************************************************/
+
+
+
+
+.chat_bot_inner_header span {
+    font-size: 20px;
+    font-weight: 650;
+    color: #fff;
+}
+.chat_bot_inner_header img {
+    width: 30px;
+    cursor: pointer;
+}
+.chat_bot_inner_header {
+    display: flex;
+    justify-content: space-between;
+    background: #0e0c36;
+    padding: 20px;
+    border-radius: 10px 10px 0px 0;
+}
+.chat_bot {
+    height: 100%;
+    background: #fff;
+    border-radius: 10px;
+    position: relative;
+}
+.chat_bot_body_area {
+    position: absolute;
+    bottom: 20px;
+    padding: 20px;
+}
+.chat_inner_area p {
+    font-size: 14px;
+    font-weight: 500;
+    background: #fafaff;
+    color: #4d4d4d;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+}
+p.second_user_chat_bot {
+    background: #5f58da;
+    color: #ffff;
+    margin-top: 40px;
+    margin-left: 80px;
+}
+.footer_area_chat_bot input {
+    border: unset;
+    outline: unset;
+}
+.footer_area_chat_bot {
+    border-top: 1px solid #f2f2f2;
+}
