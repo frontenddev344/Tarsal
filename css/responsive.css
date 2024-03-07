@@ -235,6 +235,7 @@ h4.learn2 {
   width: fit-content;
   height: auto;
   text-align: center;
+  margin: 0 auto;
 }
 .left_side_own_header {
   justify-content: end;
